@@ -1,0 +1,11 @@
+customtkinter
+pyvista
+scipy
+pandas
+reportlab
+trimesh
+rtree
+pyembree
+easydict
+pyyaml
+xxhash

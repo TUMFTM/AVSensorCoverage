@@ -1,0 +1,489 @@
+# Sensor Configuration for TUM Research Vehicle EDGAR
+cameras:
+  - name: Basler SR front left
+    type: Camera
+    position:
+      x: 2.175
+      y: 0.585
+      z: 2.043
+    orientation:
+      pitch: 10
+      yaw: 70
+      roll: 0
+    fov: 90
+    max_dist: 250
+    min_dist: 0.1
+    n_pixels:
+      width: 1920
+      height: 1200
+
+  - name: Basler SR front right
+    type: Camera
+    position:
+      x: 2.175
+      y: -0.585
+      z: 2.043
+    orientation:
+      pitch: 10
+      yaw: -70
+      roll: 0
+    fov: 90
+    max_dist: 250
+    min_dist: 0.1
+    n_pixels:
+      width: 1920
+      height: 1200
+
+  - name: Basler SR rear left
+    type: Camera
+    position:
+      x: -0.26
+      y: 0.582
+      z: 2.088
+    orientation:
+      pitch: 10
+      yaw: 90
+      roll: 0
+    fov: 90
+    max_dist: 250
+    min_dist: 0.1
+    n_pixels:
+      width: 1920
+      height: 1200
+
+  - name: Basler SR rear right
+    type: Camera
+    position:
+      x: -0.26
+      y: -0.582
+      z: 2.088
+    orientation:
+      pitch: 10
+      yaw: -90
+      roll: 0
+    fov: 90
+    max_dist: 250
+    min_dist: 0.1
+    n_pixels:
+      width: 1920
+      height: 1200
+
+  - name: Basler SR center front
+    type: Camera
+    position:
+      x: 2.193
+      y: 0
+      z: 2.043
+    orientation:
+      pitch: 10
+      yaw: 0
+      roll: 0
+    fov: 90
+    max_dist: 250
+    min_dist: 0.1
+    n_pixels:
+      width: 1920
+      height: 1200
+
+  - name: Basler SR center rear
+    type: Camera
+    position:
+      x: -0.34
+      y: -0.001
+      z: 2.088
+    orientation:
+      pitch: 10
+      yaw: 180
+      roll: 0
+    fov: 90
+    max_dist: 250
+    min_dist: 0.1
+    n_pixels:
+      width: 1920
+      height: 1200
+
+  - name: Basler LR front left
+    type: Camera
+    position:
+      x: 2.163
+      y: 0.385
+      z: 2.043
+    orientation:
+      pitch: 0
+      yaw: 0
+      roll: 0
+    fov: 39
+    max_dist: 250
+    min_dist: 0.3
+    n_pixels:
+      width: 1920
+      height: 1200
+
+  - name: Basler LR front right
+    type: Camera
+    position:
+      x: 2.163
+      y: -0.385
+      z: 2.043
+    orientation:
+      pitch: 0
+      yaw: 0
+      roll: 0
+    fov: 39
+    max_dist: 250
+    min_dist: 0.3
+    n_pixels:
+      width: 1920
+      height: 1200
+
+  - name: Framos D455e depth front left
+    type: Camera
+    position:
+      x: 2.203
+      y: 0.195
+      z: 2.043
+    orientation:
+      pitch: 0
+      yaw: 0
+      roll: 0
+    fov: 87
+    max_dist: 6
+    min_dist: 0.6
+    n_pixels:
+      width: 1280
+      height: 720
+
+  - name: Framos D455e depth front right
+    type: Camera
+    position:
+      x: 2.203
+      y: -0.195
+      z: 2.043
+    orientation:
+      pitch: 0
+      yaw: 0
+      roll: 0
+    fov: 87
+    max_dist: 6
+    min_dist: 0.6
+    n_pixels:
+      width: 1280
+      height: 720
+lidars:
+  - name: Ouster OS1 front left
+    type: 360 deg Lidar
+    position:
+      x: 2.234
+      y: 0.655
+      z: 1.952
+    orientation:
+      pitch: 0
+      yaw: 0
+      roll: -20
+    fov_h: 360
+    fov_v: 45
+    detection_range: 100
+    min_range: 0.3
+  - name: Ouster OS1 front right
+    type: 360 Lidar
+    position:
+      x: 2.234
+      y: -0.655
+      z: 1.952
+    orientation:
+      pitch: 0
+      yaw: 0
+      roll: 20
+    fov_h: 360
+    fov_v: 45
+    detection_range: 100
+    min_range: 0.3
+  - name: Innovusion Falcon front
+    type: Flash Lidar
+    position:
+      x: 2.259
+      y: 0
+      z: 1.958
+    orientation:
+      pitch: 10
+      yaw: 0
+      roll: 0
+    fov_h: 120
+    fov_v: 25
+    detection_range: 250
+    min_range: 2
+  - name: Innovusion Falcon rear
+    type: Flash Lidar
+    position:
+      x: -0.492
+      y: 0.001
+      z: 2.128
+    orientation:
+      yaw: 180
+      pitch: 10
+      roll: 0
+    fov_h: 120
+    fov_v: 25
+    detection_range: 250
+    min_range: 2
+radars:
+  - name: Conti ARS430 front left main beam
+    position:
+      x: 3.964
+      y: 0.655
+      z: 0.508
+    orientation:
+      pitch: 0
+      yaw: 22
+      roll: 0
+    fov_h: 18
+    fov_v: 14
+    detection_range: 200
+    min_range: 0.2
+  - name: Conti ARS430 front left left beam
+    position:
+      x: 3.964
+      y: 0.655
+      z: 0.508
+    orientation:
+      pitch: 0
+      yaw: 46.5
+      roll: 0
+    fov_h: 31
+    fov_v: 20
+    detection_range: 70
+    min_range: 0.2
+  - name: Conti ARS430 front left right beam
+    position:
+      x: 3.964
+      y: 0.655
+      z: 0.508
+    orientation:
+      pitch: 0
+      yaw: -2.5
+      roll: 0
+    fov_h: 31
+    fov_v: 20
+    detection_range: 70
+    min_range: 0.2
+  - name: Conti ARS430 front right main beam
+    position:
+      x: 3.965
+      y: -0.645
+      z: 0.508
+    orientation:
+      yaw: -22
+      pitch: 1
+      roll: 0
+    fov_h: 18
+    fov_v: 14
+    detection_range: 200
+    min_range: 0.2
+  - name: Conti ARS430 front right left beam
+    position:
+      x: 3.965
+      y: -0.645
+      z: 0.508
+    orientation:
+      yaw: -46.5
+      pitch: 1
+      roll: 0
+    fov_h: 31
+    fov_v: 20
+    detection_range: 70
+    min_range: 0.2
+  - name: Conti ARS430 front right right beam
+    position:
+      x: 3.965
+      y: -0.645
+      z: 0.508
+    orientation:
+      yaw: 2.5
+      pitch: 1
+      roll: 0
+    fov_h: 31
+    fov_v: 20
+    detection_range: 70
+    min_range: 0.2
+  - name: Conti ARS430 front center main beam
+    position:
+      x: 4.06
+      y: -0.22
+      z: 0.381
+    orientation:
+      pitch: 4
+      yaw: 0
+      roll: 0
+    fov_h: 18
+    fov_v: 14
+    detection_range: 200
+    min_range: 0.2
+  - name: Conti ARS430 front center left beam
+    position:
+      x: 4.06
+      y: -0.22
+      z: 0.381
+    orientation:
+      pitch: 4
+      yaw: 24.5
+      roll: 0
+    fov_h: 31
+    fov_v: 20
+    detection_range: 70
+    min_range: 0.2
+  - name: Conti ARS430 front center right beam
+    position:
+      x: 4.06
+      y: -0.22
+      z: 0.381
+    orientation:
+      pitch: 4
+      yaw: -24.5
+      roll: 0
+    fov_h: 31
+    fov_v: 20
+    detection_range: 70
+    min_range: 0.2
+  - name: Conti ARS430 rear left main beam
+    position:
+      x: -0.844
+      y: 0.716
+      z: 0.423
+    orientation:
+      yaw: 160
+      pitch: 1
+      roll: 0
+    fov_h: 18
+    fov_v: 14
+    detection_range: 200
+    min_range: 0.2
+    offset:
+      x: -0.07
+
+  - name: Conti ARS430 rear left left beam
+    position:
+      x: -0.844
+      y: 0.716
+      z: 0.423
+    orientation:
+      yaw: 184.5
+      pitch: 1
+      roll: 0
+    fov_h: 31
+    fov_v: 20
+    detection_range: 70
+    min_range: 0.2
+    offset:
+      x: -0.07
+
+  - name: Conti ARS430 rear left right beam
+    position:
+      x: -0.844
+      y: 0.716
+      z: 0.423
+    orientation:
+      yaw: 135.5
+      pitch: 1
+      roll: 0
+    fov_h: 31
+    fov_v: 20
+    detection_range: 70
+    min_range: 0.2
+    offset:
+      x: -0.07
+
+  - name: Conti ARS430 rear right main beam
+    position:
+      x: -0.842
+      y: -0.715
+      z: 0.423
+    orientation:
+      yaw: -160
+      pitch: 3
+      roll: 0
+    fov_h: 18
+    fov_v: 14
+    detection_range: 200
+    min_range: 0.2
+    offset:
+      x: -0.07
+
+  - name: Conti ARS430 rear right left beam
+    position:
+      x: -0.842
+      y: -0.715
+      z: 0.423
+    orientation:
+      yaw: -184.5
+      pitch: 3
+      roll: 0
+    fov_h: 31
+    fov_v: 20
+    detection_range: 70
+    min_range: 0.2
+    offset:
+      x: -0.07
+
+  - name: Conti ARS430 rear right right beam
+    position:
+      x: -0.842
+      y: -0.715
+      z: 0.423
+    orientation:
+      yaw: -135.5
+      pitch: 3
+      roll: 0
+    fov_h: 31
+    fov_v: 20
+    detection_range: 70
+    min_range: 0.2
+    offset:
+      x: -0.07
+
+  - name: Conti ARS430 rear center main beam
+    position:
+      x: -0.92
+      y: -0.008
+      z: 0.421
+    orientation:
+      yaw: 180
+      pitch: 1
+      roll: 0
+    fov_h: 18
+    fov_v: 14
+    detection_range: 200
+    min_range: 0.2
+    offset:
+      x: -0.05
+
+  - name: Conti ARS430 rear center left beam
+    position:
+      x: -0.92
+      y: -0.008
+      z: 0.421
+    orientation:
+      yaw: 204.5
+      pitch: 1
+      roll: 0
+    fov_h: 31
+    fov_v: 20
+    detection_range: 70
+    min_range: 0.2
+    offset:
+      x: -0.05
+
+  - name: Conti ARS430 rear center right beam
+    position:
+      x: -0.92
+      y: -0.008
+      z: 0.421
+    orientation:
+      yaw: 155.5
+      pitch: 1
+      roll: 0
+    fov_h: 31
+    fov_v: 20
+    detection_range: 70
+    min_range: 0.2
+    offset:
+      x: -0.05

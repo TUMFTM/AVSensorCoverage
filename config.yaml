@@ -1,0 +1,21 @@
+# Grid Settings
+dim_x: 20
+dim_y: 12
+dim_z: 6
+spacing: 0.3
+origin: [0, 0, 0]
+nearfield_dist: 2
+advanced: True
+
+# Sensor Coverage Settings
+conditions:
+  N1: 3
+  N2: 3
+  N6: 2
+  N7: 2
+  N8: 2
+
+# Z-Slice Settings
+slice:
+  number: 2
+  distance: 0.8

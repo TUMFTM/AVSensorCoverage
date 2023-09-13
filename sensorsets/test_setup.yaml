@@ -1,0 +1,48 @@
+lidars:
+  - name: roof lidar
+    type: 360 deg Lidar
+    position:
+      x: 2.5
+      y: 0
+      z: 2.4
+    orientation:
+      pitch: 0
+      yaw: 0
+      roll: 0
+    fov_h: 360
+    fov_v: 45
+    detection_range: 150
+    min_range: 1
+
+cameras:
+  - name: front cam
+    type: Camera
+    position:
+      x: 5
+      y: 0
+      z: 1.8
+    orientation:
+      pitch: 15
+      yaw: 0
+      roll: 0
+    fov: 70
+    max_dist: 50
+    min_dist: 0.1
+    n_pixels:
+      width: 1280
+      height: 720
+
+radars:
+  - name: center radar
+    position:
+      x: 5
+      y: 0
+      z: 0.4
+    orientation:
+      pitch: 0
+      yaw: 0
+      roll: 0
+    fov_h: 45
+    fov_v: 20
+    detection_range: 200
+    min_range: 1
